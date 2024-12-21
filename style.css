@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+:root{
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey700: hsl(0, 0%, 20%);
+    --Grey800: hsl(0, 0%, 12%);
+    --Grey900: hsl(0, 0%, 8%);
+
+    --ff-main:"Inter", serif;
+    --fs-main: 16px; 
+    --fw-400: 400;
+    --fw-600: 600;
+    --fw-700: 700;
+}
+
+/* reset */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+body {
+    font-family: var(--ff-main);
+    font-size: var(--fs-main);
+    background-color: var(--Grey900);
+    
+}
+
+/*text style*/
+.avatar-card h1{
+    font-weight: var(--fw-700);
+    color: var(--White);
+    font-size: 24px;
+    margin-bottom: .7rem;
+}
+.avatar-card h2{
+    color: var(--Green);
+    font-weight: var(--fw-600);
+    font-size: 14px;
+    margin-bottom: 1.9rem;
+}
+.avatar-card p{
+    font-weight: var(--fw-400);
+    color: var(--White);
+    font-size: 12px;
+    margin-bottom: 1.7rem;
+}
+.avatar-card img{
+    margin: 1rem;
+    margin-left: 6.5rem;
+    width: 5rem;
+    border-radius: 10rem;
+}
+
+/*general style*/
+.card{
+    place-items: center;
+    display: grid;
+    min-height: 100dvh;
+}
+.avatar-card{
+    width: 21rem;
+    padding: 1.5rem;
+    margin: 0 1.5rem;
+    border-radius: .5rem;
+    background: var(--Grey800);
+    text-align: center;
+    
+}
+
+/*button style*/
+.button p{
+    text-align: center;
+    font-weight: var(--fw-600);
+    background-color: var(--Grey700);
+    color: var(--White);
+    display: inline-block;
+    border-radius: .5rem;
+    padding: .8rem;
+    margin-bottom: .9rem;
+    width: 100%;
+}
